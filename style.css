@@ -35,8 +35,7 @@ main img {
   padding: 5px;
 }
 
-.group img{
-  
+.group img {
   width: 100%;
   padding: 5px;
 }
@@ -46,7 +45,6 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
-  
 }
 
 .item {
@@ -63,15 +61,14 @@ main img {
 header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
-  text-align:center
+  text-align: center;
 }
-header nav{
-  display:flex;
+header nav {
+  display: flex;
   justify-content: center;
 }
-header nav ul{
-  display:flex
- 
+header nav ul {
+  display: flex;
 }
 
 .logo {
@@ -81,7 +78,6 @@ header nav ul{
 }
 
 header nav ul li {
-  
   list-style-type: none;
 }
 
@@ -104,12 +100,14 @@ form {
 
 form label {
   font-weight: bold;
+  position: absolute;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
+  margin-left: 58%;
 }
 
 form button {
@@ -135,35 +133,90 @@ footer p {
 
 /* -------  Media Query ------- */
 @media all and (min-width: 768px) {
-
-  h2{
+  h2 {
     text-align: center;
   }
   header {
-    background-color: #ff385c;
-    padding: 20px 20px 0 0px;
-    text-align:left
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  header nav{
-    display:flex;
-    justify-content: end;
+
+  header nav {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: auto;
   }
-  
-  .group {
+
+  img {
+    max-width: 25%;
+  }
+
+  .group2 {
     display: flex;
     flex-direction: row;
   }
-  .group img{
-   width: 200px;
+  .item {
+    margin-top: 55px;
+    vertical-align: middle;
   }
 
- 
+  .logo {
+    display: flex;
+    font-family: "Pangolin", cursive;
+    font-size: 30px;
+    color: #fff;
+    align-self: flex-start;
+    margin-top: 10px;
+  }
 
-.logo {
-  font-family: "Pangolin", cursive;
-  font-size: 20px;
-  color: #fff;
- 
-}
+  .item3 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
 
+  .item3 img {
+    max-width: 95%;
+  }
+
+  .group3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .group4 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item4 {
+    max-width: 50%;
+    margin-top: 65px;
+    vertical-align: middle;
+    font-size: small;
+  }
+  .item5 {
+    max-width: 50%;
+    vertical-align: middle;
+    justify-content: end;
+  }
+
+  .item5 img {
+    max-width: 95%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  form select,
+  form input {
+    margin-bottom: 20px;
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
 }
