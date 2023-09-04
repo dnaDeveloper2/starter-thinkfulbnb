@@ -220,3 +220,10 @@ footer p {
     margin-left: 0;
   }
 }
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+ 
+}
