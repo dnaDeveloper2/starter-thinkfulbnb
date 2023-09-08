@@ -214,8 +214,10 @@ footer p {
 
   form select,
   form input {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
-    width: 180px;
+    width: auto;
     margin-top: 20px;
     margin-left: 0;
   }
